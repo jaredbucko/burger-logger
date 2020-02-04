@@ -1,12 +1,15 @@
+<h3>
 <li>
 	{{burger_name}}
-
-	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}DEVOUR!{{else}}UN-DEVOUR!{{/if}}
+	
+	<button class="change-devoured waves-effect waves-light btn" data-id="{{id}}" data-newdevoured="{{devoured}}">
+		{{#if devoured}}Eaten{{else}}Not Eaten{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{id}}">
-		DELETE!
+	<button class="delete-burger waves-effect waves-light btn" data-id="{{id}}">
+		Delete
 	</button>
 
 </li>
+</h3>
+
