@@ -1,16 +1,14 @@
 const express = require("express");
+const handlebars = require("express-handlebars");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 // serve content for the app from the "public" directory
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 
 // parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// set handlebars
-const handlebars = require("express-handlebars");
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
