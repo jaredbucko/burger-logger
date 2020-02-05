@@ -5,3 +5,4 @@ The Burger Journal is a node.js app that allows users to keep a log of burgers t
 https://guarded-citadel-13071.herokuapp.com/
 
 ## Screenshot
+![screenshot](screenshot.png)
